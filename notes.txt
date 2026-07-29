@@ -16,3 +16,6 @@ Angular compiles your templates into efficient JavaScript and updates the DOM wh
     Handle events and user input
     Fetch data with the HttpClient(Observables)
     Navigate with the Router
+
+PATH is the list of folders your system searches for commands like ng
+By default the dev server runs on http:localhost:4200
