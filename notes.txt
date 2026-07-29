@@ -9,4 +9,10 @@ Angular is a full-featured front-end framework for building web applications
     Supports standalone APIs (no NgModules needed)
     Works great for single-page applications (SPAs)
 
-    
+HOW ANGULAR WORKS?
+Angular compiles your templates into efficient JavaScript and updates the DOM when your component state changes
+    Declare UI with HTML-based templates
+    Bind data with interpolation and directives
+    Handle events and user input
+    Fetch data with the HttpClient(Observables)
+    Navigate with the Router
