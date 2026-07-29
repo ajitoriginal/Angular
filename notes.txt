@@ -19,3 +19,8 @@ Angular compiles your templates into efficient JavaScript and updates the DOM wh
 
 PATH is the list of folders your system searches for commands like ng
 By default the dev server runs on http:localhost:4200
+
+COMPONENTS
+A component is a class that controls a view (its template)
+Each component has a selector (e.g., app-root) that you place in HTML
+the root component renders inside index.html's <app-root>
