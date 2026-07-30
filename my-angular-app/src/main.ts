@@ -3,9 +3,13 @@ import {Component } from '@angular/core'
 @Component({
   selector: 'app-root',
   standalone: true,
-  template: `<h1>Hello, {{name}}!</h1>`
+  template: `
+  <h3>Hello, {{name}}!</h3>
+  <button (click)="name = 'Angular'">Reset</button>
+  `
 })
 
-class App {name = 'Angular 21'}
-
+export class App {
+  name = 'World'
+}
 bootstrapApplication(App)

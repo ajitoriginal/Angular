@@ -18,9 +18,26 @@ Angular compiles your templates into efficient JavaScript and updates the DOM wh
     Navigate with the Router
 
 PATH is the list of folders your system searches for commands like ng
-By default the dev server runs on http:localhost:4200
+By default the dev server runs on http://localhost:4200
 
 COMPONENTS
 A component is a class that controls a view (its template)
 Each component has a selector (e.g., app-root) that you place in HTML
 the root component renders inside index.html's <app-root>
+
+TEMPLATES
+    Templates are HTML that a component renders
+    It combines plain HTML with Angular template syntax to show data and react to user events
+
+    Overview:
+        Explore templates step by step in these next chapters:
+        Interpolation - show values with {{ ... }}.
+        Template Reference Variables - use #var to reference elements.
+        Null-Safe Navigation (?.) - read optional values safely.
+        Structural Directives: Micro-syntax - the * shorthand.
+        ngTemplateOutlet - render a template by reference.
+        Template Statements and $event - handle events and inputs.
+        Alias with as in *ngIf - create local aliases.
+        Pipes in Templates (|) - format and transform values.
+        Attribute Binding with attr. - bind to HTML attributes.
+        TrackBy with *ngFor - keep lists fast and stable.
