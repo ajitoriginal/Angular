@@ -81,4 +81,20 @@ TEMPLATES : NULL-SAFE NAVIGATION (?.)
         Async or optional data where properties may be absent
         Use ?. (and optional chaining in code) over verbose checks
         Combine with ?? to provide default values
-        
+============================================================
+
+============================================================
+TEMPLATES : STRUCTURAL DIRECTIVES MICRO-SYNTAX
+    * is shortand that expands to an underlying <ng-template>
+    Provides context variables (e.g., index as i, else)
+    Angular rewrites *ngIf, *ngFor, etc., using this syntax
+
+    Important: In Angular 17+, prefer the new control flow syntax (@if, @for, @switch).
+    The micro-syntax for *ngIf/*ngFor remains supported for existing code.
+
+    When to use:
+        With structural directives to add/remove DOM based on data
+        To iterate lists concisely with *ngFor
+        Use shorthand for readability; use explicit <ng-template> when needed
+============================================================
+
