@@ -113,3 +113,18 @@ TEMPLATES : ngTemplateOutlet
     Tip: Use <ng-container> as a logical wrapper that does not add extra DOM elements
 ============================================================
 
+============================================================
+TEMPLATE : Statements and $event
+    Handle user events in the template and access the native event via $event
+    Run in response to events bound with (click), (input), etc.
+    Use $event for the native event object
+    Use $any(...) to help with types like target.value
+
+    When to use:
+        Simple UI interactions and state updates from events
+        Keep template logic minimal; move complex logic to the component class
+        Pair with template reference variables for straightforward interactions
+
+        
+============================================================
+
