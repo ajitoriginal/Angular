@@ -42,7 +42,7 @@ TEMPLATES
         Attribute Binding with attr. - bind to HTML attributes.
         TrackBy with *ngFor - keep lists fast and stable.
 
-INTERPOLATION
+TEMPLATES : INTERPOLATION
     Display component values in the DOM with double curly braces {{...}}
     Read it as : "take this value and print it as text"
     One-way only : data --> view
@@ -52,4 +52,14 @@ INTERPOLATION
         Use property/attribute binding for dynamic attributes
         for HTML content, consider [innerHTML] with care
         {{expression}} : Evaluates against the component and inserts the result as text (HTML-escaped)
+
+TEMPLATES : REFERENCE VARIABLES
+    Gives a local name to an element or directive instance like #box
+    Lets you read values or call methods directly in the template
+    Scoped to the template where it is declared
+
+    When to use:
+        Simple interactions(read input value, focus an element)
+        Access directive/component API in the view without extra bindings
+        For complex logix, use component methods and state
 
