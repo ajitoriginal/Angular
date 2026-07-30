@@ -167,3 +167,16 @@ TEMPLATES : Attribute binding with att.
         Common with ARIA attributes and table attr like colspan
 ============================================================
 
+============================================================
+TEMPLATES : TrackBy with *ngFor
+    Keep lists fast and stable by identifying items with a unique key via trackBy
+    Defines how Angular identifies list items
+    Enables DOM node reuse when items move, insert, or remove
+    Typically returns a unique ID for each item
+
+    When to use:
+        Lists that are frequently reordered, inserted or removed
+        To avoid unnecessary re-rendering and improve performance
+        When items have stable, unique identifires
+============================================================
+
