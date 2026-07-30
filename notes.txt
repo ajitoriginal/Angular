@@ -138,3 +138,19 @@ TEMPLATES : Alias with as in *ngIf
         To improve readability and reduce duplication
 ============================================================
 
+============================================================
+TEMPLATES : Pipes in Templates (|)
+    Format and transform values inline using the | operator
+    Transform values for display using the | operator
+    Accepts optional arguments (e.g., formats, locales)
+    Multiple pipes can be chained
+
+    When to use:
+        Format dates, numbers, and text directly in the template
+        Use pure pipes for performance
+        Move complex or side-effectful logic to the component
+
+        {{ amount | currency:'USD' }}: Formats amount as US dollars using the built-in CurrencyPipe.
+
+============================================================
+

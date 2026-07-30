@@ -7,15 +7,16 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <h3>*ngIf with as</h3>
-    <button (click)="toggle()">Toggle user</button>
-    <p *ngIf="user as u; else empty">Hello {{ u.name }}!</p>
-    <ng-template #empty>No user</ng-template>
+    <h3>Built-in pipes</h3>
+    <p>Today: {{ today | date:'yyyy-MM-dd' }}</p>
+    <p>Name: {{ name | uppercase }}</p>
+    <p>Chained: {{ ratio | percent:'1.0-2' | uppercase }}</p>
   `
 })
 export class App {
-  user: { name: string } | null = { name: 'Ada' };
-  toggle(){ this.user = this.user ? null : { name: 'Ada' }; }
+  today = new Date();
+  name = 'Ada Lovelace';
+  ratio = 0.756;
 }
 
 bootstrapApplication(App);
