@@ -154,3 +154,16 @@ TEMPLATES : Pipes in Templates (|)
 
 ============================================================
 
+============================================================
+TEMPLATES : Attribute binding with att.
+    Bind to HTML attributes with [attr.name] when no DOM property exists
+    Use [attr.name] to set HTML attributes
+    For attributes that do not map to DOM properties(e.g., ARIA, colspan)
+    Distinct from property binding
+
+    When to use:
+        When no corresponding DOM property exists
+        Use property binding for normal element properties
+        Common with ARIA attributes and table attr like colspan
+============================================================
+
