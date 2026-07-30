@@ -124,7 +124,17 @@ TEMPLATE : Statements and $event
         Simple UI interactions and state updates from events
         Keep template logic minimal; move complex logic to the component class
         Pair with template reference variables for straightforward interactions
+============================================================
 
-        
+============================================================
+TEMPLATES : Alias with as in *ngIf
+    Create a local alias for the truthy value of the condition
+    Example: *ngIf="user as u" then use u inside
+    Makes templates clearner by not repeating expressions
+
+    When to use:
+        When the same expression is referenced several times
+        When using an else template that also needs the value
+        To improve readability and reduce duplication
 ============================================================
 

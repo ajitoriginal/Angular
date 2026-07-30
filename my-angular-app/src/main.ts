@@ -1,20 +1,21 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
+  imports: [CommonModule],
   template: `
-    <h3>Template statements and $event</h3>
-    <button (click)="count = count + 1">Increment</button>
-    <input placeholder="Type" (input)="text = $any($event.target).value" [value]="text" />
-    <p>Count: {{ count }}</p>
-    <p>Text: {{ text || '(empty)' }}</p>
+    <h3>*ngIf with as</h3>
+    <button (click)="toggle()">Toggle user</button>
+    <p *ngIf="user as u; else empty">Hello {{ u.name }}!</p>
+    <ng-template #empty>No user</ng-template>
   `
 })
 export class App {
-  count = 0;
-  text = '';
+  user: { name: string } | null = { name: 'Ada' };
+  toggle(){ this.user = this.user ? null : { name: 'Ada' }; }
 }
 
 bootstrapApplication(App);
