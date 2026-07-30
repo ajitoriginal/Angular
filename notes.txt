@@ -41,3 +41,15 @@ TEMPLATES
         Pipes in Templates (|) - format and transform values.
         Attribute Binding with attr. - bind to HTML attributes.
         TrackBy with *ngFor - keep lists fast and stable.
+
+INTERPOLATION
+    Display component values in the DOM with double curly braces {{...}}
+    Read it as : "take this value and print it as text"
+    One-way only : data --> view
+
+    When to use:
+        Show text values and simple, fast expressions (no side effects)
+        Use property/attribute binding for dynamic attributes
+        for HTML content, consider [innerHTML] with care
+        {{expression}} : Evaluates against the component and inserts the result as text (HTML-escaped)
+

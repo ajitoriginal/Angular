@@ -4,12 +4,16 @@ import {Component } from '@angular/core'
   selector: 'app-root',
   standalone: true,
   template: `
-  <h3>Hello, {{name}}!</h3>
-  <button (click)="name = 'Angular'">Reset</button>
+  <h3>{{title}}</h3>
+  <p>Hello {{name}}</p>
+  <p>2+3 = {{2+3}}</p>
+  <p>Upper: {{name.toUpperCase()}}</p>
+  
   `
 })
 
 export class App {
-  name = 'World'
+  title = 'Test Title';
+  name = 'World';
 }
 bootstrapApplication(App)
